@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         errorText = (TextView) findViewById(R.id.textView3);
 
         //Initialize data file(remove the comments to make the data file in phones memory)
-        /*
+        
         String asd = "[\n" +
                 "  {\n" +
                 "    \"accounts\": [],\n" +
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 "]";
 
         ReadAndWrite.write("data.json",asd,MainActivity.this);
-        */
+        
     }
 
     /*
