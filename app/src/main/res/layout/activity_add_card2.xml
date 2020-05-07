@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4FFFFFF"
+    android:backgroundTint="#2088E3"
+    tools:context=".AddCardActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:onClick="HomeButtonOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kuva1" />
+
+    <Button
+        android:id="@+id/SignOut_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1847BC"
+        android:onClick="logOutButtonOnClick"
+        android:text="Kirjaudu ulos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SaveNewCard"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/SaveNewCard"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#1847BC"
+        android:onClick="saveButtonOnClick"
+        android:text="Tallenna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromAccount_Spinner" />
+
+    <Button
+        android:id="@+id/Cancel_button1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#1847BC"
+        android:onClick="CancelButtonOnClick"
+        android:text="Peruuta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/SaveNewCard"
+        app:layout_constraintTop_toBottomOf="@+id/fromAccount_Spinner" />
+
+    <Button
+        android:id="@+id/NewPayment_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#1847BC"
+        android:onClick="NewPaymentButtonOnClick"
+        android:text="Maksa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/NewTransfer_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1847BC"
+        android:onClick="MoneyTransferButtonOnClick"
+        android:text="Siirto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Cards_button"
+        app:layout_constraintStart_toEndOf="@+id/NewPayment_button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Cards_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#1847BC"
+        android:text="Kortit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="181dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ei_muuteta14">
+
+        <RadioButton
+            android:id="@+id/Luottokortti_radiobutton"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
+            android:text="Luottokortti"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <RadioButton
+            android:id="@+id/LuottokorttiPlus_radiobutton"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
+            android:text="Luottokortti PLUS"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <RadioButton
+            android:id="@+id/Luottokortti_Platinum_radiobutton"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
+            android:text="Luottokortti Platinum" />
+
+        <RadioButton
+            android:id="@+id/Maksukortti_radiobutton"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:text="Maksukortti" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Ei_muuteta14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Valitse kortin tyyppi:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewPayment_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Tilinumero:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Spinner
+        android:id="@+id/fromAccount_Spinner"
+        android:layout_width="119dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="24dp"
+        android:background="#F4F2F2"
+        android:gravity="start|left"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

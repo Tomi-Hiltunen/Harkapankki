@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="logo_desc">Logo</string>
+    <string name="username_textview">Käyttäjätunnus:</string>
+    <string name="username_plaintext_hint">Käyttäjätunnus</string>
+    <string name="login_button">Kirjaudu</string>
+    <string name="pass_plainText">Salasana</string>
+    <string name="payNavButton">Maksa</string>
+    <string name="transferNavButton">Siirto</string>
+    <string name="cardsNavButton">Kortit</string>
+    <string name="currentAccount">Käyttötili</string>
+    <string name="balance_textview">Saldo</string>
+    <string name="continue_button">Jatka</string>
+    <string name="addAccount">+ Lisää tili</string>
+    <string name="saving_text">Säästötili</string>
+    <string name="save_text">Tallenna</string>
+    <string name="add_account_number">tilinumero</string>
+</resources>

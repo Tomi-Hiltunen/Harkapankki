@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4FFFFFF"
+    android:backgroundTint="#2088E3"
+    tools:context=".WelcomeScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/logo_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kuva1" />
+
+    <Button
+        android:id="@+id/payNavButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1847BC"
+        android:onClick="payNavButtonOnClick"
+        android:text="@string/payNavButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/transferNavButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1847BC"
+        android:onClick="MoneyTransferButtonOnClick"
+        android:text="@string/transferNavButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardsNavButton"
+        app:layout_constraintStart_toEndOf="@+id/payNavButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cardsNavButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1847BC"
+        android:onClick="CardsButtonOnClick"
+        android:text="@string/cardsNavButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/currentAccount"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1847BC"
+        android:gravity="start|center_vertical"
+        android:onClick="currentAccountButtonOnClick"
+        android:text="@string/currentAccount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferNavButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Pankkikortit_nappi"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1847BC"
+        android:gravity="left|center_vertical"
+        android:onClick="CardsButtonOnClick"
+        android:text="Pankkikortit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentAccount" />
+
+    <Button
+        android:id="@+id/AccountSettingsButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1847BC"
+        android:gravity="left|center_vertical"
+        android:onClick="ChangeAccountsButtonOnClick"
+        android:text="Muuta tilejä"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pankkikortit_nappi" />
+
+    <Button
+        android:id="@+id/SignOut_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1847BC"
+        android:onClick="logOutButtonOnClick"
+        android:text="Kirjaudu ulos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAccountButton"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <Button
+        android:id="@+id/addAccountButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1847BC"
+        android:gravity="left|center_vertical"
+        android:onClick="addAccountButtonOnClick"
+        android:text="@string/addAccount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/SettingsButton"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="SettingsOnClick"
+        app:layout_constraintBottom_toBottomOf="@+id/SignOut_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SignOut_button"
+        app:srcCompat="@drawable/asetukset" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1847BC"
+        android:gravity="left|center_vertical"
+        android:onClick="AddMoneyButtonOnClick"
+        android:text="Talleta tai Nosta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccountSettingsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
